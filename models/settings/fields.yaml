@@ -1,0 +1,21 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    scheduled_backup:
+        label: Scheduled backup
+        type: switch
+        description: Executes the backup command automatically
+        comment: You are required to set up the crontab as explained in the documentation.
+
+    frequency:
+        label: Frequency
+        type: dropdown
+        options:
+            hourly: Hourly
+            daily: Daily
+            weekly: Weekly
+            monthly: Monthly
+            yearly: Yearly
+        comment: Select how often the backup command should run.

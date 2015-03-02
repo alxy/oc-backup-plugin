@@ -1,0 +1,28 @@
+<div class="report-widget">
+    <h3><?= e(trans($this->property('title'))) ?></h3>
+
+    <?php if (!isset($error)): ?>
+        <ul class="status-list">
+            <li>
+                <a href="<?= Backend::url('system/settings/update/alxy/backup/settings') ?>">
+                    <?php if ($enabled): ?>
+                        <span class="status circle success"></span>
+                        <?= e(trans('enabled')) ?>
+                    <?php else: ?>
+                        <span class="status circle danger"></span>
+                        <?= e(trans('disabled')) ?>
+                    <?php endif ?>
+                </a>
+            </li>
+            <?php if ($lastBackup): ?>
+                <li>
+                    <a href="<?= Backend::url('system/settings/update/alxy/backup/settings') ?>">
+                        Last successful backup ran on <?= $lastBackup->format($this->property('dateFormat')) ?>!
+                    </a>
+                </li>
+            <?php endif ?>
+        </ul>
+    <?php else: ?>
+        <p class="flash-message static warning"><?= e($error) ?></p>
+    <?php endif ?>
+</div>
