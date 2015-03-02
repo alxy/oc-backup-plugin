@@ -8,7 +8,7 @@ This plugin adds [spatie/laravel-backup](https://github.com/freekmurze/laravel-b
 * `php artisan backup:run`
 
 ## Configuration
-* This plugin automatically publishes its config file to*/config/laravel-backup.php*. Please read this file carefully and change the options to fit your needs.
+* This plugin automatically publishes its config file to */config/laravel-backup.php*. Please read this file carefully and change the options to fit your needs.
 * This plugin also adds the ability to run the backup command frequently. Go to *Settings > System > Backup Setting* to enable and configure the scheduled command.
 
 ## Report widget
