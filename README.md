@@ -4,7 +4,7 @@ This plugin adds [spatie/laravel-backup](https://github.com/freekmurze/laravel-b
 
 ## Installation
 * `git clone` into */plugins/alxy/backup*
-* `composer install`
+* `composer install --no-dev`
 * `php artisan backup:run`
 
 ## Configuration
